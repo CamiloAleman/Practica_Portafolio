@@ -21,26 +21,57 @@
         .nav-link:hover {
             color: #59ac9a !important;
         }
-        
+
+        .col-imgs {
+            margin-right: 5px;
+            margin-top: 50px;
+        }
+
+        .container-projects {
+            padding-top: 50px;
+        }
+
+        .projectIdea {
+            margin: 0 auto;
+            width: 500px;
+            height: 400px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .col-projectimgs {
+            margin-right: 0px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 100px;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+
     </style>
 
     <div class="p-3 mb-2 bg-dark text-white">
         <h1 class="text-center">EL MEJOR PORTAFOLIO DEL MUNDO</h1>
-            <ul class="nav justify-content-center">
+            <ul class="nav justify-content-center container-fluid">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" >Acerca de</a>
+                <a class="nav-link active" aria-current="page" href="#about" >Acerca de</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Estudios</a>
+                <a class="nav-link" href="#studios">Estudios</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Experiencia Laboral</a>
+                <a class="nav-link" href="#employH">Experiencia Laboral</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Lenguajes de programación</a>
+                <a class="nav-link" href="#languages">Lenguajes de programación</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Proyectos</a>
+                <a class="nav-link" href="#projectsH">Proyectos</a>
                 </li>
             </ul>
     </div>
@@ -52,7 +83,7 @@
                     <div class="blockabout">
                         <div class="blockabout-inner text-center text-sm-start">
                             <div class="title-big pb-3 mb-3 text-center">
-                                <h3 class="display-4"> ¿Quién soy? </h3>
+                                <h2 class="display-4" id="about"> ¿Quién soy? </h2>
                             </div>
                             <p class="lead">
                                 Este portafolio fue creado un 14 de abril del 2024 por Camilo Herradora. Estudiante de 4to año de la carrera
@@ -84,7 +115,7 @@
     <section id="aboutmeIMG">
         <div class="container-fluid">
             <div class="text-center">
-                <img src="https://amilanipun.com/php_assets/uploads/2020/12/framework1.jpg" class="img-fluid" alt="frameworks">
+                <img src="https://amilanipun.com/php_assets/uploads/2020/12/framework1.jpg" class="img-fluid" alt="frameworks" width="600" height = 500>
             </div>
         </div>
     </section>
@@ -94,7 +125,7 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="title-big pb-3 mb-3 text-center">
-                <h1 class="display-4">Estudios</h1>
+                <h1 class="display-4" id="studios">Estudios</h1>
             </div>    
                 <div class="row text-center"> 
                     <p class="lead">Estudiante en activo de la carrera de Ingeniería en
@@ -107,33 +138,141 @@
     </div>
 
 
+    <br>
+    <br>
+    <br>
+    <br>
     <section id="employment">
-        <h2>Employment</h2>
-        <ul>
-            <li>Company Name - Position, Year</li>
-            <li>Company Name - Position, Year</li>
-        </ul>
+        <div class="container-fluid">
+            <div class="title-big pb-3 mb-3 text-center">
+                <h1 class="display-4" id="employH">Experiencia Laboral</h1>
+            </div>
+            <div class="blocEmployment">
+                <div class="row text-center">
+                    <p class="lead pb-5">Salesforce Administrator en Sistemática Internacional INC. (2024) </p>
+                </div>
+            </div>
     </section>
 
+    <section id="employmentIMG">
+        <div class="container-fluid">
+            <div class="text-center">
+                <img src="https://sistematicainternacional.my.salesforce-sites.com/resource/1554231500000/AID_images/AID_images/logo.png" class="img-fluid" alt="sistematicainternacional" width="400" 
+                height="500">
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <section id="programming-languages">
-        <h2>Programming Languages and Skills</h2>
-        <ul>
-            <li>Programming Language 1</li>
-            <li>Programming Language 2</li>
-            <li>Programming Language 3</li>
-        </ul>
+        <div class="container-fluid about">
+            <div class="title-big pb-3 mb-3 text-center">
+                <h1 class="display-4" id="languages"> Lenguajes de programación </h1>
+            </div>
+            <div class="row">
+                <div class="col-6 align-items-center justify-content-center d-flex mb-5 mb-lg-0">
+                    <div class="blockabout">
+                        <div class="blockabout-inner text-center text-sm-start">
+                            <p class="lead p-4">
+                                Conocimientos sólidos en Java, C++ y SQL
+                                <br>
+                                <br>
+                                Conocimientos básicos en HTML y CSS
+                                <br>
+                                <br>
+                                Conocimientos fundamentales en RPA
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 align-items-center justify-content-center d-flex">
+                    <div class="row">
+                        <div class="col-imgs align-items-center justify-content-center d-flex mb-5 mb-lg-0">                
+                            <!--<img src="F:\UAM\7mo SEMESTRE\Ecommerce\portafolio\assets\java.png" class="img-fluid" alt="java" width="200" height="300">-->
+                            <img src="https://i.blogs.es/e7b69c/java_logo/450_1000.webp" class=img-fluid alt="java" width="200" height="300">
+                        </div>
+                        <div class="col-imgs align-items-center justify-content-center d-flex">
+                            <!--<img src="F:\UAM\7mo SEMESTRE\Ecommerce\portafolio\assets\c++.png" class="img-fluid" alt="c++" width="200" height="300">-->
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" class="img-fluid" alt="c++" width="200" height="300">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-imgs align-items-center justify-content-center d-flex mb-5 mb-lg-0">                
+                            <!--<img src="F:\UAM\7mo SEMESTRE\Ecommerce\portafolio\assets\uipath.jpg" class="img-fluid" alt="RPA" width="200" height="300"> -->
+                            <img src="https://www.igmguru.com/uploads/products/uipath-rpa-igmguru_1529302643_xl.jpg" class="img-fluid" alt="RPA" width="200" height="300">
+                        </div>
+                        <div class="col-imgs align-items-center justify-content-center d-flex">
+                           <!--- <img src="F:\UAM\7mo SEMESTRE\Ecommerce\portafolio\assets\sql.png" class="img-fluid" alt="c++" width="200" height="300"> -->
+                            <img src="https://www.bigbaydata.com/wp-content/uploads/2022/11/sql_ejercicios.png" class="img-fluid" alt="sql" width="200" height="300">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
     </section>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Project 1 - Description</li>
-            <li>Project 2 - Description</li>
-            <li>Project 3 - Description</li>
-        </ul>
+        <div class="container-projects">
+            <div class="title-big pb-3 mb-3 text-center">
+                <h1 class="display-4" id="projectsH">Proyectos</h1>
+            </div>    
+                <div class="row-idea">
+                    <div class="projectIdea-inner text-center">
+                        <p class="lead"><strong>UAMToday</strong>
+                        </p>
+
+                        <div class="projectIdea">
+                        <p class="projectidea lead">La idea de UAMToday consistió en un entorno amigable para la comunidad educativa UAM, una propuesta
+                            que fue brindada a la institución como un concepto asemejante a una red social, los usuarios vendrían siendo los estudiantes, los cuales
+                        podrían publicar noticias en distintas categorías, en dependencia de la facultad o del asunto de interés (como puede ser un asunto deportivo o académico).
+                        <br><br> Entre las tecnologías utilizadas encontramos Spring(Java), SQLServer, PostgreSQL y Kotlin
+                        <br><br> Link de la aplicación: <a href="https://github.com/drakenlander/UAM-News-Android">UAMToday</a>
+                        
+                        </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid text-center">
+                    <div class="row">
+                        <div class="col-projectimgs col-md-4 col-lg-6">
+                            <img src="https://i2.wp.com/curiotek.com/wp-content/uploads/2017/06/Spring-Logo.png?fit=851%2C446&ssl=1" class="img-fluid" alt="spring" width="600" height="400">
+                        </div>
+                        <div class="col-projectimgs col-md-4 col-lg-6">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/640px-Postgresql_elephant.svg.png" class="img-fluid" alt="c++" width="300" height="100">
+                        </div>
+                    </div>
+                </div>
+
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
     crossorigin="anonymous"></script>
 </body>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <p>&copy; 2024 Camilo Herradora. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </html>
